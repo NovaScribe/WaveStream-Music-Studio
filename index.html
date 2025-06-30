@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocal-Hub</title>
+</head>
+<body>
+<header>
+        <nav>
+            <div class="logo"><a href="https://novascribe.github.io/vocalhub/">vocal-hub</a></div>
+            <div class="options">
+                <a href="#">option 1</a>
+                <a href="#">option 2</a>
+                <a href="#">option 3</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchQuery" placeholder="Search Here!">
+                <button onclick="performSearch()">Search</button>
+            </div>
+            <div class="mobile-menu-container">
+                <div class="mobile-menu-icon" onclick="toggleMobileMenu()">&#9776;</div>
+                <div class="mobile-options">
+                    <a onclick="scrollm(this)" id="tutorial">Tutorials</a>
+                    <a href="#">option 1</a>
+                    <a href="#">option 2</a>
+                    <a href="#">option 3</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+</body>
+
+<script type="text/javascript" language="javascript">
+    var date = new Date();
+    var current_time = date.getHours()
+    var current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + "-" + date.getHours()+"-" + date.getMinutes();
+    var versionUpdate = current_date;
+    /*-----add js----------*/
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "script.js?v=" + versionUpdate;
+    document.head.appendChild(script);
+    /*--------add css---------------*/
+    var style = document.createElement('link');
+    style.rel = "stylesheet";
+    style.href = "style.css?v=" + versionUpdate;
+    document.head.appendChild(style);
+    /*---------------------------------*/
+    var stylenav = document.createElement('link');
+    stylenav.rel = "stylesheet";
+    stylenav.href = "stylesNAV.css?v=" + versionUpdate;
+    document.head.appendChild(stylenav);
+
+</script>
+
+</html>

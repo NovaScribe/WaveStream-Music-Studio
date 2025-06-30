@@ -1,0 +1,132 @@
+
+header {
+    background-color: #333;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a{
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.options a,
+.user-actions a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.options a:hover,
+.user-actions a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.user-actions{
+    float: right;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: none;
+}
+
+header input[type="text"] {
+    width:300px;
+    padding: 4px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    text-align: center;
+}
+
+header button{
+    padding: 5px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mobile-menu-container {
+    display: none;
+}
+
+.mobile-menu-icon {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.mobile-options {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: rgb(51, 51, 51);
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.6) 3px 3px 10px;
+    z-index: 1;
+}
+
+.mobile-options a {
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-options a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .options,
+    .user-actions,
+    .search-bar {
+        display: none;
+    }
+
+    .mobile-menu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 8px;
+    }
+
+    .mobile-menu-container:hover .mobile-options {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .search-bar {
+        display: none;
+    }
+}

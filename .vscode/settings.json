@@ -1,0 +1,10 @@
+{
+    "liveServer.settings.root": "/",
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.ignoreFiles": [".vscode/**", ".git/**", "**/*.tmp"],
+    "liveServer.settings.wait": 500,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.NoBrowser": false,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "liveServer.settings.host": "127.0.0.1"
+}

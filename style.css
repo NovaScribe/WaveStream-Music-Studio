@@ -1,0 +1,53 @@
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    color: #222;
+    background: #fff;
+}
+
+#placeholder-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.song-placeholder {
+    max-width: 400px;
+    margin: 32px auto;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #0001;
+    background: #fafbfc;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid #ccc;
+    flex: 1 1 340px;
+}
+
+.song-placeholder img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #eee;
+}
+
+.song-placeholder h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.3em;
+}
+
+.song-placeholder p {
+    margin: 0 0 4px 0;
+    color: #555;
+}
+
+.song-placeholder span {
+    color: #222;
+}

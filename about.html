@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script type="text/javascript" language="javascript">
+        var date = new Date();
+        var current_time = date.getHours();
+        var current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + "-" + date.getHours() + "-" + date.getMinutes();
+        var versionUpdate = current_date;
+        /*-----add js----------*/
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "script.js?v=" + versionUpdate;
+        document.head.appendChild(script);
+        /*--------add css---------------*/
+        var style = document.createElement('link');
+        style.rel = "stylesheet";
+        style.href = "style.css?v=" + versionUpdate;
+        document.head.appendChild(style);
+    // var stylenav = document.createElement('link');
+    // stylenav.rel = "stylesheet";
+    // stylenav.href = "stylesNAV.css?v=" + versionUpdate;
+    // document.head.appendChild(stylenav);
+        var common = document.createElement('link');
+        common.rel = "stylesheet";
+        common.href = "common.css?v=" + versionUpdate;
+        document.head.appendChild(common);
+    </script>
+</head>
+<body>
+    <!-- Body content here -->
+</body>
+</html>

@@ -11,7 +11,7 @@
     <header>
         <nav>
             <div class="logo"><a href="https://novascribe.github.io/vocalhub/">vocal-hub</a></div>
-            <div class="options">
+            <!-- <div class="options">
                 <a href="#">option 1</a>
                 <a href="#">option 2</a>
                 <a href="#">option 3</a>
@@ -28,7 +28,7 @@
                     <a href="#">option 2</a>
                     <a href="#">option 3</a>
                 </div>
-            </div>
+            </div> -->
         </nav>
     </header>
 
@@ -54,24 +54,12 @@
                 </div>
             </a>
         </div>
-        <div class="song-placeholder">
-            <a href="song.html" style="text-decoration:none;color:inherit;display:block;">
-                <img src="cover-placeholder.jpg" alt="Song Cover">
-                <div>
-                    <h2>Song Title</h2>
-                    <p>Year: <span>2025</span></p>
-                    <p>Language: <span>Malayalam</span></p>
-                    <p>Movie: <span>Movie Name</span></p>
-                    <p>Artist: <span>Artist Name</span></p>
-                </div>
-            </a>
-        </div>
     </div>
 </body>
 
 <script type="text/javascript" language="javascript">
     var date = new Date();
-    var current_time = date.getHours()
+    var current_time = date.getHours();
     var current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + "-" + date.getHours() + "-" + date.getMinutes();
     var versionUpdate = current_date;
     /*-----add js----------*/
@@ -84,11 +72,14 @@
     style.rel = "stylesheet";
     style.href = "style.css?v=" + versionUpdate;
     document.head.appendChild(style);
-    /*---------------------------------*/
-    var stylenav = document.createElement('link');
-    stylenav.rel = "stylesheet";
-    stylenav.href = "stylesNAV.css?v=" + versionUpdate;
-    document.head.appendChild(stylenav);
+    // var stylenav = document.createElement('link');
+    // stylenav.rel = "stylesheet";
+    // stylenav.href = "stylesNAV.css?v=" + versionUpdate;
+    // document.head.appendChild(stylenav);
+    var common = document.createElement('link');
+    common.rel = "stylesheet";
+    common.href = "common.css?v=" + versionUpdate;
+    document.head.appendChild(common);
 </script>
 
 </html>

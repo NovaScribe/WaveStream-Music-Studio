@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minnalvala - Karaoke</title>
-    <link rel="stylesheet" href="style.css?v=1">
 </head>
 <body>
 <header>
         <nav>
             <div class="logo"><a href="https://novascribe.github.io/vocalhub/">vocal-hub</a></div>
-            <div class="options">
+            <!-- <div class="options">
                 <a href="#">option 1</a>
                 <a href="#">option 2</a>
                 <a href="#">option 3</a>
@@ -27,10 +26,9 @@
                     <a href="#">option 2</a>
                     <a href="#">option 3</a>
                 </div>
-            </div>
+            </div> -->
         </nav>
     </header>
-    <hr>
     <div class="song-placeholder" style="margin-top:40px;">
         <img src="/coverphoto/Minnalvala-500x500.jpg" alt="Song Cover">
         <div>
@@ -42,10 +40,26 @@
             <a href="/mp3/Minnalvala Karaoke.mp3" download style="display:inline-block;margin-top:16px;padding:10px 24px;font-size:1em;border-radius:6px;background:#1976d2;color:#fff;border:none;cursor:pointer;text-align:center;text-decoration:none;">Download</a>
         </div>
     </div>
+    <div class="lyric-video-container">
+        <video controls>
+            <source src="/mp4/VID_20240615_064248.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="lyric-video-caption">Minnalvala Karaoke - Lyrical Video</div>
+    </div>
+    <footer class="footer-vocalhub">
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+            <a href="Privacy-Policy.html">Privacy Policy</a>
+            <a href="about.html#aboutus">About Us</a>
+        </div>
+        <div class="copyright">&copy; 2025 Vocal-Hub. All rights reserved.</div>
+    </footer>
 </body>
 <script type="text/javascript" language="javascript">
     var date = new Date();
-    var current_time = date.getHours()
+    var current_time = date.getHours();
     var current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + "-" + date.getHours() + "-" + date.getMinutes();
     var versionUpdate = current_date;
     /*-----add js----------*/
@@ -54,14 +68,17 @@
     script.src = "script.js?v=" + versionUpdate;
     document.head.appendChild(script);
     /*--------add css---------------*/
+    var songcss = document.createElement('link');
+    songcss.rel = "stylesheet";
+    songcss.href = "individual-page-song-place-holder.css?v=" + versionUpdate;
+    document.head.appendChild(songcss);
     var style = document.createElement('link');
     style.rel = "stylesheet";
     style.href = "style.css?v=" + versionUpdate;
     document.head.appendChild(style);
-    /*---------------------------------*/
-    var stylenav = document.createElement('link');
-    stylenav.rel = "stylesheet";
-    stylenav.href = "stylesNAV.css?v=" + versionUpdate;
-    document.head.appendChild(stylenav);
+    var common = document.createElement('link');
+    common.rel = "stylesheet";
+    common.href = "common.css?v=" + versionUpdate;
+    document.head.appendChild(common);
 </script>
 </html>

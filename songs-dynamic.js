@@ -52,51 +52,6 @@ var songs = [
         artist: 'Jakes Bejoy, Sid Sriram, and Sithara',
         cover: 'coverphoto/Minnalvala-500x500.jpg',
         page: 'minnalvala.html'
-    },
-    {
-        title: 'Another Song',
-        year: '2024',
-        language: 'Hindi',
-        movie: 'Some Movie',
-        artist: 'Some Artist',
-        cover: 'coverphoto/AnotherSong-500x500.jpg',
-        page: 'another-song.html'
-    },
-    {
-        title: 'Another Song',
-        year: '2024',
-        language: 'Hindi',
-        movie: 'Some Movie',
-        artist: 'Some Artist',
-        cover: 'coverphoto/AnotherSong-500x500.jpg',
-        page: 'another-song.html'
-    },
-    {
-        title: 'Another Song',
-        year: '2024',
-        language: 'Hindi',
-        movie: 'Some Movie',
-        artist: 'Some Artist',
-        cover: 'coverphoto/AnotherSong-500x500.jpg',
-        page: 'another-song.html'
-    },
-    {
-        title: 'Another Song',
-        year: '2024',
-        language: 'Hindi',
-        movie: 'Some Movie',
-        artist: 'Some Artist',
-        cover: 'coverphoto/AnotherSong-500x500.jpg',
-        page: 'another-song.html'
-    },
-    {
-        title: 'Another Song',
-        year: '2024',
-        language: 'Hindi',
-        movie: 'Some Movie',
-        artist: 'Some Artist',
-        cover: 'coverphoto/AnotherSong-500x500.jpg',
-        page: 'another-song.html'
     }
 ];
 

@@ -1,0 +1,17 @@
+{
+    "name": "Vocal-Hub",
+    "short_name": "VocalHub",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#1976d2",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/vocalhub/",
+    "scope": "/vocalhub/",
+    "description": "Karaoke and music platform for singers and music lovers."
+}

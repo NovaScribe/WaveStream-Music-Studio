@@ -1,6 +1,6 @@
 // Show body when window loads
-window.addEventListener('load', function() {
-    document.body.style.display  = 'block';
+window.addEventListener('load', function () {
+    document.body.style.display = 'block';
     addFooter();
 });
 
@@ -16,14 +16,13 @@ function addFooter() {
     var footer = document.createElement('footer');
     footer.className = 'footer-vocalhub';
     footer.innerHTML = `
-        <div class="footer-links">
+            <div class="footer-links">
             <a href="about.html">About</a>
-            <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/m_a_n_e_sh_" target="_blank">Instagram</a>
             <a href="Privacy-Policy.html">Privacy Policy</a>
             <a href="about.html#aboutus">About Us</a>
         </div>
-        <div class="copyright">&copy; 2025 Vocal-Hub. All rights reserved.</div>
-    `;
+        <div class="copyright">&copy; 2025 Vocal-Hub. All rights reserved.</div>`;
     document.body.appendChild(footer);
 }
 

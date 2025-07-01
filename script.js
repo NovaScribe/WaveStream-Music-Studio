@@ -1,9 +1,7 @@
-// Hide body until fully loaded, then show
-document.addEventListener('DOMContentLoaded', function() {
-    document.body.style.display = 'none';
-});
+// Show body when window loads
 window.addEventListener('load', function() {
     document.body.style.display  = 'block';
+    addFooter();
 });
 
 function performSearch() {
@@ -12,3 +10,20 @@ function performSearch() {
     var searchURL = "https://www.google.com/search?q=" + encodeURIComponent(website + " " + searchQuery);
     window.open(searchURL, '_blank');
 }
+
+// Dynamically add footer to all pages
+function addFooter() {
+    var footer = document.createElement('footer');
+    footer.className = 'footer-vocalhub';
+    footer.innerHTML = `
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+            <a href="Privacy-Policy.html">Privacy Policy</a>
+            <a href="about.html#aboutus">About Us</a>
+        </div>
+        <div class="copyright">&copy; 2025 Vocal-Hub. All rights reserved.</div>
+    `;
+    document.body.appendChild(footer);
+}
+

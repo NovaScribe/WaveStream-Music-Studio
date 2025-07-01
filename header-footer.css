@@ -48,15 +48,21 @@ header .logo a {
 }
 .footer-vocalhub .footer-links {
     margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 32px;
 }
-.footer-vocalhub a {
-    margin: 0 12px;
-    color: #1976d2;
+.footer-vocalhub .footer-links a {
+    color: #000000;
     text-decoration: none;
     transition: color 0.2s;
+    min-width: 100px;
+    text-align: center;
+    word-break: break-word;
 }
 .footer-vocalhub a:hover {
-    color: #0d47a1;
+    color: #000000;
     text-decoration: underline;
 }
 .footer-vocalhub .copyright {

@@ -60,7 +60,13 @@ header .logo a {
     text-align: center;
     word-break: break-word;
 }
-.footer-vocalhub a:hover {
+.footer-vocalhub .footer-links a:visited {
+    color: #000000;
+}
+.footer-vocalhub .footer-links a:active {
+    color: #000000;
+}
+.footer-vocalhub .footer-links a:hover {
     color: #000000;
     text-decoration: underline;
 }

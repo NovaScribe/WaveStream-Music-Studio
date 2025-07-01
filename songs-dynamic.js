@@ -45,7 +45,7 @@ function addSongsToHome(songs) {
 
 var songs = [
     {
-        title: 'Minnalvala - Karaoke',
+        title: 'Minnalvala - Karaoke Non Copyright',
         year: '2025',
         language: 'Malayalam',
         movie: 'Narivetta',

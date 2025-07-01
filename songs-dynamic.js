@@ -2,12 +2,12 @@
 // Dynamically add songs to the homepage from songs-dynamic.js
 
 function addSongsToHome(songs) {
-    var placeholderBox = document.getElementById('placeholder-box');
+    var placeholderBox = document.getElementById('homepage-placeholder-box');
     if (!placeholderBox) return;
     placeholderBox.innerHTML = '';
     songs.forEach(function (song) {
         var songDiv = document.createElement('div');
-        songDiv.className = 'song-placeholder';
+        songDiv.className = 'homepage-song-placeholder';
         var a = document.createElement('a');
         a.href = song.page;
         a.style.textDecoration = 'none';
@@ -18,7 +18,7 @@ function addSongsToHome(songs) {
         img.alt = 'Song Cover';
         img.onerror = function() {
             this.onerror = null;
-            this.src = 'https://via.placeholder.com/160'; // Use your temp image path
+            this.src = 'coverphoto/placeholder-500x500.jpg';
         };
         var infoDiv = document.createElement('div');
         var h2 = document.createElement('h2');

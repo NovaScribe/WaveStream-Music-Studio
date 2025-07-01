@@ -21,7 +21,10 @@
         document.head.appendChild(style);
     // var stylenav = document.createElement('link');
     // stylenav.rel = "stylesheet";
-    // stylenav.href = "stylesNAV.css?v=" + versionUpdate;
+    var headerfooter = document.createElement('link');
+    headerfooter.rel = "stylesheet";
+    headerfooter.href = "header-footer.css?v=" + versionUpdate;
+    document.head.appendChild(headerfooter);
     // document.head.appendChild(stylenav);
         var common = document.createElement('link');
         common.rel = "stylesheet";

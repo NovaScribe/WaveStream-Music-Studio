@@ -1,0 +1,65 @@
+/* header-footer.css: Shared header and footer styles for all pages */
+
+/* Header styles */
+header {
+    background: #222;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 8px #0002;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 24px;
+    min-height: 56px;
+}
+header .logo a {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 0 12px 0 0;
+}
+
+/* Responsive nav (if you want to add mobile menu later) */
+@media (max-width: 600px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 8px;
+    }
+    header .logo a {
+        font-size: 1.3em;
+    }
+}
+
+/* Footer styles */
+.footer-vocalhub {
+    margin-top: 40px;
+    background: #f5f5f5;
+    padding: 24px 0 12px 0;
+    text-align: center;
+    font-size: 1em;
+    color: #444;
+    border-top: 1px solid #e0e0e0;
+}
+.footer-vocalhub .footer-links {
+    margin-bottom: 10px;
+}
+.footer-vocalhub a {
+    margin: 0 12px;
+    color: #1976d2;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-vocalhub a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+.footer-vocalhub .copyright {
+    font-size: 0.95em;
+    color: #888;
+}

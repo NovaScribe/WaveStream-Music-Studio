@@ -2,7 +2,7 @@
 .song-placeholder {
     max-width: 400px;
     margin: 32px auto;
-    padding: 24px;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 2px 12px #0001;
     background: #fafbfc;
@@ -11,6 +11,7 @@
     align-items: center;
     border: 1px solid #ccc;
     flex: 1 1 340px;
+    box-sizing: border-box;
 }
 
 .song-placeholder img {
@@ -19,6 +20,8 @@
     object-fit: cover;
     border-radius: 5px;
     background: #eee;
+    /* padding: 8px; */
+    box-sizing: border-box;
 }
 
 .song-placeholder h2 {

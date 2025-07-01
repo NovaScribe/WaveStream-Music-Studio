@@ -42,7 +42,7 @@
 
     </div>
     <hr>
-    <div id="placeholder-box"></div>
+    <div id="homepage-placeholder-box"></div>
 </body>
 
 <script type="text/javascript" language="javascript">
@@ -66,10 +66,10 @@
     style.href = "style.css?v=" + versionUpdate;
     document.head.appendChild(style);
     /*-----add js----------*/
-    var stylenav = document.createElement('link');
-    stylenav.rel = "stylesheet";
-    stylenav.href = "stylesNAV.css?v=" + versionUpdate;
-    document.head.appendChild(stylenav);
+    var headerfooter = document.createElement('link');
+    headerfooter.rel = "stylesheet";
+    headerfooter.href = "header-footer.css?v=" + versionUpdate;
+    document.head.appendChild(headerfooter);
     /*-----add js----------*/
     var common = document.createElement('link');
     common.rel = "stylesheet";

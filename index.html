@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vocal-Hub</title>
+    <style>body{display:none;}</style>
 </head>
 
 <body>
@@ -41,20 +42,7 @@
 
     </div>
     <hr>
-    <div id="placeholder-box">
-        <div class="song-placeholder">
-            <a href="minnalvala.html" style="text-decoration:none;color:inherit;display:block;">
-                <img src="coverphoto/Minnalvala-500x500.jpg" alt="Song Cover">
-                <div>
-                    <h2>Minnalvala - Karaoke</h2>
-                    <p>Year: <span>2025</span></p>
-                    <p>Language: <span>Malayalam</span></p>
-                    <p>Movie: <span>Narivetta</span></p>
-                    <p>Artist: <span>Jakes Bejoy, Sid Sriram, and Sithara</span></p>
-                </div>
-            </a>
-        </div>
-    </div>
+    <div id="placeholder-box"></div>
 </body>
 
 <script type="text/javascript" language="javascript">
@@ -62,6 +50,11 @@
     var current_time = date.getHours();
     var current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + "-" + date.getHours() + "-" + date.getMinutes();
     var versionUpdate = current_date;
+    /*-----add js----------*/
+    var scriptSongsDynamic = document.createElement("script");
+    scriptSongsDynamic.type = "text/javascript";
+    scriptSongsDynamic.src = "songs-dynamic.js?v=" + versionUpdate;
+    document.body.appendChild(scriptSongsDynamic);
     /*-----add js----------*/
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -72,10 +65,12 @@
     style.rel = "stylesheet";
     style.href = "style.css?v=" + versionUpdate;
     document.head.appendChild(style);
-    // var stylenav = document.createElement('link');
-    // stylenav.rel = "stylesheet";
-    // stylenav.href = "stylesNAV.css?v=" + versionUpdate;
-    // document.head.appendChild(stylenav);
+    /*-----add js----------*/
+    var stylenav = document.createElement('link');
+    stylenav.rel = "stylesheet";
+    stylenav.href = "stylesNAV.css?v=" + versionUpdate;
+    document.head.appendChild(stylenav);
+    /*-----add js----------*/
     var common = document.createElement('link');
     common.rel = "stylesheet";
     common.href = "common.css?v=" + versionUpdate;

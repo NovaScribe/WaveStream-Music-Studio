@@ -1,0 +1,103 @@
+// songs-dynamic.js
+// Dynamically add songs to the homepage from songs-dynamic.js
+
+function addSongsToHome(songs) {
+    var placeholderBox = document.getElementById('placeholder-box');
+    if (!placeholderBox) return;
+    placeholderBox.innerHTML = '';
+    songs.forEach(function (song) {
+        var songDiv = document.createElement('div');
+        songDiv.className = 'song-placeholder';
+        var a = document.createElement('a');
+        a.href = song.page;
+        a.style.textDecoration = 'none';
+        a.style.color = 'inherit';
+        a.style.display = 'block';
+        var img = document.createElement('img');
+        img.src = song.cover;
+        img.alt = 'Song Cover';
+        img.onerror = function() {
+            this.onerror = null;
+            this.src = 'https://via.placeholder.com/160'; // Use your temp image path
+        };
+        var infoDiv = document.createElement('div');
+        var h2 = document.createElement('h2');
+        h2.textContent = song.title;
+        var pYear = document.createElement('p');
+        pYear.innerHTML = 'Year: <span>' + song.year + '</span>';
+        var pLang = document.createElement('p');
+        pLang.innerHTML = 'Language: <span>' + song.language + '</span>';
+        var pMovie = document.createElement('p');
+        pMovie.innerHTML = 'Movie: <span>' + song.movie + '</span>';
+        var pArtist = document.createElement('p');
+        pArtist.innerHTML = 'Artist: <span>' + song.artist + '</span>';
+        infoDiv.appendChild(h2);
+        infoDiv.appendChild(pYear);
+        infoDiv.appendChild(pLang);
+        infoDiv.appendChild(pMovie);
+        infoDiv.appendChild(pArtist);
+        a.appendChild(img);
+        a.appendChild(infoDiv);
+        songDiv.appendChild(a);
+        placeholderBox.appendChild(songDiv);
+    });
+}
+
+var songs = [
+    {
+        title: 'Minnalvala - Karaoke',
+        year: '2025',
+        language: 'Malayalam',
+        movie: 'Narivetta',
+        artist: 'Jakes Bejoy, Sid Sriram, and Sithara',
+        cover: 'coverphoto/Minnalvala-500x500.jpg',
+        page: 'minnalvala.html'
+    },
+    {
+        title: 'Another Song',
+        year: '2024',
+        language: 'Hindi',
+        movie: 'Some Movie',
+        artist: 'Some Artist',
+        cover: 'coverphoto/AnotherSong-500x500.jpg',
+        page: 'another-song.html'
+    },
+    {
+        title: 'Another Song',
+        year: '2024',
+        language: 'Hindi',
+        movie: 'Some Movie',
+        artist: 'Some Artist',
+        cover: 'coverphoto/AnotherSong-500x500.jpg',
+        page: 'another-song.html'
+    },
+    {
+        title: 'Another Song',
+        year: '2024',
+        language: 'Hindi',
+        movie: 'Some Movie',
+        artist: 'Some Artist',
+        cover: 'coverphoto/AnotherSong-500x500.jpg',
+        page: 'another-song.html'
+    },
+    {
+        title: 'Another Song',
+        year: '2024',
+        language: 'Hindi',
+        movie: 'Some Movie',
+        artist: 'Some Artist',
+        cover: 'coverphoto/AnotherSong-500x500.jpg',
+        page: 'another-song.html'
+    },
+    {
+        title: 'Another Song',
+        year: '2024',
+        language: 'Hindi',
+        movie: 'Some Movie',
+        artist: 'Some Artist',
+        cover: 'coverphoto/AnotherSong-500x500.jpg',
+        page: 'another-song.html'
+    }
+];
+
+addSongsToHome(songs);

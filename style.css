@@ -14,20 +14,31 @@ body {
     gap: 32px;
     justify-content: center;
     align-items: flex-start;
+    padding: 10px;
+    
 }
 
 .song-placeholder {
     max-width: 400px;
     margin: 32px auto;
-    padding: 24px;
+    padding: 0;
     border-radius: 12px;
     box-shadow: 0 2px 12px #0001;
-    background: #fafbfc;
+    background: #dbdbdb;
+    border: 1px solid #ccc;
+    flex: 1 1 340px;
+    /* Remove flex and gap to avoid space between placeholder and its a */
+}
+
+.song-placeholder a {
     display: flex;
     gap: 20px;
     align-items: center;
-    border: 1px solid #ccc;
-    flex: 1 1 340px;
+    padding: 24px;
+    border-radius: 12px;
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
 }
 
 .song-placeholder img {

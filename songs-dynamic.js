@@ -60,7 +60,7 @@ var songs = [
         movie: 'Mayaanadhi',
         artist: '-',
         cover: 'coverphoto/bavra-mann.jpg',
-        page: '/Bavra-Mann-Mayaandhi.html'
+        page: 'Bavra-Mann-Mayaandhi.html'
     },
     {
         title: 'Uyire - Karaoke No-CopyRight',

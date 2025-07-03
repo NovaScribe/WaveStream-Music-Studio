@@ -40,9 +40,9 @@ body {
 }
 
 .homepage-song-placeholder img {
-    width: 160px;
+    /* width: 160px; */
     height: 160px;
-    object-fit: cover;
+    object-fit:scale-down;
     border-radius: 8px;
     background: #eee;
 }

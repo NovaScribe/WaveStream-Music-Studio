@@ -16,7 +16,7 @@ function addSongsToHome(songs) {
         var img = document.createElement('img');
         img.src = song.cover;
         img.alt = 'Song Cover';
-        img.onerror = function() {
+        img.onerror = function () {
             this.onerror = null;
             this.src = 'coverphoto/placeholder-500x500.jpg';
         };
@@ -52,6 +52,14 @@ var songs = [
         artist: 'Jakes Bejoy, Sid Sriram, and Sithara',
         cover: 'coverphoto/Minnalvala-500x500.jpg',
         page: 'minnalvala.html'
+    },{
+        title: 'Bavra-Mann - Karaoke',
+        year: '-',
+        language: 'Malayalam',
+        movie: 'Mayaanadhi',
+        artist: '-',
+        cover: 'coverphoto/bavra-mann.jpg',
+        page: '/Bavra-Mann-Mayaandhi.html'
     }
 ];
 

@@ -34,24 +34,6 @@
     <header>
         <nav>
             <div class="logo"><a href="https://novascribe.github.io/vocalhub/">vocal-hub</a></div>
-            <!-- <div class="options">
-                <a href="#">option 1</a>
-                <a href="#">option 2</a>
-                <a href="#">option 3</a>
-            </div>
-            <div class="search-bar">
-                <input type="text" id="searchQuery" placeholder="Search Here!">
-                <button onclick="performSearch()">Search</button>
-            </div>
-            <div class="mobile-menu-container">
-                <div class="mobile-menu-icon" onclick="toggleMobileMenu()">&#9776;</div>
-                <div class="mobile-options">
-                    <a onclick="scrollm(this)" id="tutorial">Tutorials</a>
-                    <a href="#">option 1</a>
-                    <a href="#">option 2</a>
-                    <a href="#">option 3</a>
-                </div>
-            </div> -->
         </nav>
     </header>
     <div id="song-placeholder" style="margin-top:40px;"></div>
@@ -141,14 +123,17 @@
     songcss.rel = "stylesheet";
     songcss.href = "individual-page-song-place-holder.css?v=" + versionUpdate;
     document.head.appendChild(songcss);
+    
     var style = document.createElement('link');
     style.rel = "stylesheet";
     style.href = "style.css?v=" + versionUpdate;
     document.head.appendChild(style);
+
     var headerfooter = document.createElement('link');
     headerfooter.rel = "stylesheet";
     headerfooter.href = "header-footer.css?v=" + versionUpdate;
     document.head.appendChild(headerfooter);
+
     var common = document.createElement('link');
     common.rel = "stylesheet";
     common.href = "common.css?v=" + versionUpdate;

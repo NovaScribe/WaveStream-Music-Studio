@@ -69,7 +69,7 @@ var songs = [
         movie: 'Gauthamante Radham',
         artist: '-',
         cover: 'coverphoto/uyire.jpg',
-        page: '/Uyire-karaoke.html'
+        page: 'Uyire-karaoke.html'
     },
     {
         title: 'Njan Jackson allada - Karaoke No-CopyRight',
@@ -78,7 +78,7 @@ var songs = [
         movie: 'Ambili',
         artist: '-',
         cover: 'coverphoto/njan-jackson-allada.jpg',
-        page: '/njan-allada-ambili.html'
+        page: 'njan-allada-ambili.html'
     },
     {
         title: 'Mizhiyil Ninnum - Karaoke No-CopyRight',
@@ -87,7 +87,7 @@ var songs = [
         movie: '-',
         artist: '-',
         cover: 'coverphoto/mizhiyil-nunnum.jpg',
-        page: '/Mizhiyil-Ninnum.html'
+        page: 'Mizhiyil-Ninnum.html'
     },
     {
         title: 'Puthiyoru Pathayil - Karaoke No-CopyRight',
@@ -96,7 +96,7 @@ var songs = [
         movie: '-',
         artist: '-',
         cover: 'coverphoto/putiyoru-pathayil.jpg',
-        page: '/putiyoru-pathayil-karaoke.html'
+        page: 'putiyoru-pathayil-karaoke.html'
     },
     {
         title: 'Ezhutha Kadha - Karaoke No-CopyRight',
@@ -105,7 +105,7 @@ var songs = [
         movie: 'Kumbalangi Nights',
         artist: '-',
         cover: 'coverphoto/ezhutha-kadha.jpg',
-        page: '/ezhutha-kadha-karaoke.html'
+        page: 'ezhutha-kadha-karaoke.html'
     },
     {
         title: 'Koodu Vittu - Karaoke No-CopyRight',
@@ -114,7 +114,7 @@ var songs = [
         movie: 'June',
         artist: '-',
         cover: 'coverphoto/koodu-vittu.jpg',
-        page: '/koodu-vittu-karaoke.html'
+        page: 'koodu-vittu-karaoke.html'
     },
     {
         title: 'Melle Enne.. Nooru.. - Karaoke No-CopyRight',
@@ -123,7 +123,7 @@ var songs = [
         movie: 'Mandharam',
         artist: '-',
         cover: 'coverphoto/Melle-enne.jpg',
-        page: '/Melle-enne-karaoke.html'
+        page: 'Melle-enne-karaoke.html'
     },
     {
         title: 'Oduvile Theeyayi - Karaoke No-CopyRight',
@@ -132,7 +132,7 @@ var songs = [
         movie: 'Varathan',
         artist: '-',
         cover: 'coverphoto/Oduvile-Theeyayi.jpg',
-        page: '/Oduvile-Theeyayi-karaoke.html'
+        page: 'Oduvile-Theeyayi-karaoke.html'
     },
     {
         title: 'Pulari mazhakal-Karaoke No-CopyRight',
@@ -141,7 +141,7 @@ var songs = [
         movie: 'Mandharam',
         artist: '-',
         cover: 'coverphoto/Pulari-mazhakal.jpg',
-        page: '/Pulari-mazhakal-karaoke.html'
+        page: 'Pulari-mazhakal-karaoke.html'
     },
     {
         title: 'Nee.. Pranayamothum-Karaoke No-CopyRight',
@@ -150,7 +150,7 @@ var songs = [
         movie: 'Varathan',
         artist: '-',
         cover: 'coverphoto/nee-pranayamodum.jpg',
-        page: '/nee-pranayamodum-karaoke.html'
+        page: 'nee-pranayamodum-karaoke.html'
     },
     {
         title: 'Maanathe Kanalaali - Karaoke No-CopyRight',
@@ -159,7 +159,7 @@ var songs = [
         movie: 'Theevandi',
         artist: '-',
         cover: 'coverphoto/Maanthe-kanalaali.jpg',
-        page: '/Maanthe-kanalaali-karaoke.html'
+        page: 'Maanthe-kanalaali-karaoke.html'
     },
     {
         title: 'ആനന്ദാമേ സർവ്വമാനന്ദാമേ- Karaoke',
@@ -168,7 +168,7 @@ var songs = [
         movie: 'Aravindante Athidhikal',
         artist: '-',
         cover: 'coverphoto/poramo.jpg',
-        page: '/aanandhame-sarvam-karaoke.html'
+        page: 'aanandhame-sarvam-karaoke.html'
     },
     {
         title: 'Neramai Nilaa..Karaoke-Karaoke No-CopyRight',
@@ -177,7 +177,7 @@ var songs = [
         movie: 'Poomaram',
         artist: '-',
         cover: 'coverphoto/neramai-nelaa.jpg',
-        page: '/neramai-nelaa-karaoke.html'
+        page: 'neramai-nelaa-karaoke.html'
     }
 ];
 

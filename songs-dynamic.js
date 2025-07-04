@@ -162,7 +162,7 @@ var songs = [
         page: '/Maanthe-kanalaali-karaoke.html'
     },
     {
-        title: 'ആനന്ദാമേ സർവ്വമാനന്ദാമേ- Karaoke No-CopyRight',
+        title: 'ആനന്ദാമേ സർവ്വമാനന്ദാമേ- Karaoke',
         year: '-',
         language: 'Malayalam',
         movie: 'Aravindante Athidhikal',

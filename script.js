@@ -22,7 +22,7 @@ function addFooter() {
             <a href="https://www.instagram.com/vocal.hub.cloud/" target="_blank">Instagram</a>
             <a href="Privacy-Policy.html">Privacy Policy</a>
         </div>
-        <div class="copyright">&copy; 2025 Vocal-Hub. All rights reserved.</div>`;
+        <div class="copyright">&copy; 2025 WaveStream Music Studio. All rights reserved.</div>`;
     document.body.appendChild(footer);
 }
 

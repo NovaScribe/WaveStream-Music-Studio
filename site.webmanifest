@@ -1,6 +1,6 @@
 {
     "name": "Vocal-Hub",
-    "short_name": "VocalHub",
+    "short_name": "WaveStream Music Studio",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -11,7 +11,7 @@
     "theme_color": "#1976d2",
     "background_color": "#ffffff",
     "display": "standalone",
-    "start_url": "/vocalhub/",
-    "scope": "/vocalhub/",
+    "start_url": "/WaveStream Music Studio/",
+    "scope": "/WaveStream Music Studio/",
     "description": "Karaoke and music platform for singers and music lovers."
 }

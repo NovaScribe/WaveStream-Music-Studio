@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- common -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="author" content="maneesh">
+
+    <!-- page related -->
+    <title>Melle Enne.. Nooru.. Karaoke -  Mandharam.mp4</title>
+    <meta name="description"
+        content="Wavestream Music Studio is a website providing karaoke, music, lyrics, and music videos. Minnalvala - Karaoke non Copyright">
+    <meta name="keywords"
+        content="karaoke, wavestream music studio, music, lyrics, malayalam karaoke, hindi karaoke, tamil karaoke, song lyrics, music videos, minnalvala, Narivetta">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YP2FKK2J3D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YP2FKK2J3D');
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="https://novascribe.github.io/vocalhub/">Wavestream Music Studio</a></div>
+        </nav>
+    </header>
+    <div id="song-placeholder" style="margin-top:40px;"></div>
+    <div class="lyric-video-container">
+        <video controls>
+            <source src="/mp4/Melle Enne.. Nooru.. Karaoke -  Mandharam.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="lyric-video-caption">Melle Enne.. Nooru.. - Karaoke No-CopyRight</div>
+    </div>
+    <!-- Footer will be injected by script.js -->
+</body>
+
+<script type="text/javascript" language="javascript">
+    var date = new Date();
+    var current_time = date.getHours();
+    var current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + "-" + date.getHours() + "-" + date.getMinutes();
+    var versionUpdate = current_date;
+    /*-----add js----------*/
+    // Add song placeholder dynamically
+    var song = {
+
+        title: 'Melle Enne.. Nooru.. - Karaoke No-CopyRight',
+        year: '-',
+        language: 'Malayalam',
+        movie: 'Mandharam',
+        artist: '-',
+        cover: 'coverphoto/Melle-enne.jpg',
+        download: 'mp3/Melle Enne.. Nooru.. Karaoke -  Mandharam.mp3'
+    };
+    function addSongPlaceholder(song) {
+        var container = document.getElementById('song-placeholder');
+        if (!container) return;
+        var songDiv = document.createElement('div');
+        songDiv.className = 'song-placeholder';
+        var img = document.createElement('img');
+        img.src = song.cover;
+        img.alt = 'Song Cover';
+        img.onerror = function () {
+            this.onerror = null;
+            this.src = 'https://placehold.co/150x150/png?text=img&font=roboto';
+        };
+        var infoDiv = document.createElement('div');
+        var h2 = document.createElement('h2');
+        h2.textContent = song.title;
+        var pYear = document.createElement('p');
+        pYear.innerHTML = 'Year: <span>' + song.year + '</span>';
+        var pLang = document.createElement('p');
+        pLang.innerHTML = 'Language: <span>' + song.language + '</span>';
+        var pMovie = document.createElement('p');
+        pMovie.innerHTML = 'Movie: <span>' + song.movie + '</span>';
+        var pArtist = document.createElement('p');
+        pArtist.innerHTML = 'Artist: <span>' + song.artist + '</span>';
+        var downloadBtn = document.createElement('a');
+        downloadBtn.href = song.download;
+        downloadBtn.download = '';
+        downloadBtn.textContent = 'Download Mp3';
+        downloadBtn.style.display = 'inline-block';
+        downloadBtn.style.marginTop = '16px';
+        downloadBtn.style.padding = '10px 24px';
+        downloadBtn.style.fontSize = '1em';
+        downloadBtn.style.borderRadius = '6px';
+        downloadBtn.style.background = '#1976d2';
+        downloadBtn.style.color = '#fff';
+        downloadBtn.style.border = 'none';
+        downloadBtn.style.cursor = 'pointer';
+        downloadBtn.style.textAlign = 'center';
+        downloadBtn.style.textDecoration = 'none';
+        infoDiv.appendChild(h2);
+        infoDiv.appendChild(pYear);
+        infoDiv.appendChild(pLang);
+        infoDiv.appendChild(pMovie);
+        infoDiv.appendChild(pArtist);
+        infoDiv.appendChild(downloadBtn);
+        songDiv.appendChild(img);
+        songDiv.appendChild(infoDiv);
+        container.appendChild(songDiv);
+    }
+    addSongPlaceholder(song);
+
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "script.js?v=" + versionUpdate;
+    document.head.appendChild(script);
+    /*--------add css---------------*/
+    var songcss = document.createElement('link');
+    songcss.rel = "stylesheet";
+    songcss.href = "individual-page-song-place-holder.css?v=" + versionUpdate;
+    document.head.appendChild(songcss);
+
+    var style = document.createElement('link');
+    style.rel = "stylesheet";
+    style.href = "style.css?v=" + versionUpdate;
+    document.head.appendChild(style);
+
+    var headerfooter = document.createElement('link');
+    headerfooter.rel = "stylesheet";
+    headerfooter.href = "header-footer.css?v=" + versionUpdate;
+    document.head.appendChild(headerfooter);
+    var common = document.createElement('link');
+    common.rel = "stylesheet";
+    common.href = "common.css?v=" + versionUpdate;
+    document.head.appendChild(common);
+</script>
+
+</html>

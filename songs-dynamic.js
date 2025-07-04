@@ -87,7 +87,7 @@ var songs = [
         movie: '-',
         artist: '-',
         cover: 'coverphoto/mizhiyil-nunnum.jpg',
-        page: '/Oru-Deivam-Thantha.html'
+        page: '/Mizhiyil-Ninnum.html'
     },
     {
         title: 'Puthiyoru Pathayil - Karaoke No-CopyRight',

@@ -19,7 +19,7 @@ function addFooter() {
     footer.innerHTML = `
         <div class="footer-links">
             <a href="about.html">About</a>
-            <a href="https://www.instagram.com/vocal.hub.cloud/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/wavestream.music.studio/" target="_blank">Instagram</a>
             <a href="Privacy-Policy.html">Privacy Policy</a>
         </div>
         <div class="copyright">&copy; 2025 WaveStream Music Studio. All rights reserved.</div>`;
